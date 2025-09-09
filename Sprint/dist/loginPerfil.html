@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../src/assets/logo.svg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body style="background-image: url('../public/background1.png');" class="bg-[url(../public/background1.png)] bg-cover flex justify-end">
+    <aside class="w-[50vw] h-screen flex flex-col pl-44 justify-center gap-10 bg-white rounded-l-4xl">
+        <div class="w-full flex flex-col gap-10">
+            <img class="w-32" src="../public/Logo-preta.png" alt="Logo Passa Bola Branca">
+            <h2 class="text-4xl font-bold">Entrar</h2>
+        </div>
+        <form class="w-5/6 flex flex-col gap-8">
+            <div class="w-full flex flex-col gap-6">
+                <input
+                    class="py-3 transition border-b-2 border-gray-400 focus:border-b-2 focus:border-[#EE4D9B] focus:outline-none"
+                    type="email" placeholder="Email">
+                <input
+                    class="py-3 transition border-b-2 border-gray-400 focus:border-b-2 focus:border-[#EE4D9B] focus:outline-none"
+                    type="password" placeholder="Senha">
+            </div>
+            <div class="w-full flex justify-end"> 
+                <a class="text-center text-lg text-[#EE4D9B]" href="./esqueciMinhaSenha.html">Esqueci minha senha?</a>
+            </div>
+            <a class="bg-[#EE4D9B] text-white py-3 rounded-lg font-bold text-center" href="./indexPosLogin.html">Entrar</a>
+            <div class="w-full flex justify-center py-6 rounded-lg">
+                <p class="text-lg">Não tem uma conta? <a class="text-[#EE4D9B] font-bold" href="./cadastre-sePerfil.html">Cadastre-se</a></p>
+            </div>
+            <div class="w-2/4 border-2 border-[#EE4D9B] rounded-xl">
+                <a href="" class="w-full flex items-center justify-center gap-x-3 py-3 text-lg"><img src="../public/google.png" alt="">Entrar com o Google</a>
+            </div>
+        </form>
+    </aside>
+</body>
+
+</html>

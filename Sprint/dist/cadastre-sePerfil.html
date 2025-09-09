@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../src/assets/logo.svg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body style="background-image: url('../public/background1.png');"
+    class="bg-[url(../public/background1.png)] bg-cover flex justify-end">
+    <aside class="w-[50vw] h-screen flex flex-col pl-56 justify-center gap-5 bg-white rounded-l-4xl">
+        <div class="w-full flex flex-col gap-10">
+            <img class="w-32" src="../public/Logo-preta.png" alt="Logo Passa Bola Branca">
+            <h2 class="text-4xl font-bold">Cadastre-se</h2>
+        </div>
+        <form class="w-3/4 flex flex-col gap-6 mt-8">
+            <div class="flex flex-col gap-8 items-center">
+                <input class="w-full py-2 border-b-2 border-gray-300 focus:border-[#EE4D9B] focus:outline-none"
+                    type="text" placeholder="Nome completo">
+                <input class="w-full py-2 border-b-2 border-gray-300 focus:border-[#EE4D9B] focus:outline-none"
+                    type="email" placeholder="Email">
+                <div class="w-full flex gap-6">
+                    <input class="w-1/2 py-2 border-b-2 border-gray-300 focus:border-[#EE4D9B] focus:outline-none"
+                        type="text" placeholder="Número">
+                    <input class="w-1/2 py-2 border-b-2 border-gray-300 focus:border-[#EE4D9B] focus:outline-none"
+                        type="text" placeholder="CEP">
+                </div>
+                <div class="w-full flex gap-6">
+                    <input class="w-1/2 py-2 border-b-2 border-gray-300 focus:border-[#EE4D9B] focus:outline-none"
+                        type="text" placeholder="Endereço">
+                    <input class="w-1/2 py-2 border-b-2 border-gray-300 focus:border-[#EE4D9B] focus:outline-none"
+                        type="text" placeholder="Adicional">
+                </div>
+                <div class="w-full flex gap-6">
+                    <input class="w-1/2 py-2 border-b-2 border-gray-300 focus:border-[#EE4D9B] focus:outline-none"
+                        type="password" placeholder="Senha">
+                    <input class="w-1/2 py-2 border-b-2 border-gray-300 focus:border-[#EE4D9B] focus:outline-none"
+                        type="password" placeholder="Confirmar senha">
+                </div>
+            </div>
+
+            <a href="./loginPerfil.html" class="bg-[#EE4D9B] text-white text-center py-3 rounded-lg font-bold w-full text-lg" type="submit">Criar</a>
+            <p class="text-center text-gray-400 text-lg">Já tem uma conta? <a class="text-[#EE4D9B] font-bold"
+                    href="./loginPerfil.html">Entrar</a></p>
+        </form>
+    </aside>
+</body>
+
+</html>
