@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+@theme {
+    --color-pink: #EE4D9B;
+    --color-purple: #8461C9;
+    --color-green: #6EAA38;
+}
+
+body {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+ 

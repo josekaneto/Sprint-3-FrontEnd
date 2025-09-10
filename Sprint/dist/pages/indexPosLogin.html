@@ -6,40 +6,42 @@
     <link rel="shortcut icon" href="../src/assets/logo.svg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Passa Bola</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body class="font-[Barlow Condensed, sans-serif] overflow-x-hidden">
-    <section style="background-image: url('../public/background1.png');"
-        class="w-screen h-screen bg-[url(../public/background1.png)] bg-cover ">
+<body class="overflow-x-hidden">
+    <section class="w-screen h-screen bg-[url(../../public/background1.png)] bg-cover bg-no-repeat">
         <header class="w-full flex justify-between items-center py-5 px-56">
-            <img src="../public/Logo-branca.png" alt="Logo Passa Bola Branca">
+            <img src="../../public/Logo-branca.png" alt="Logo Passa Bola Branca">
             <nav>
                 <ul class="flex gap-10">
-                    <li><a class="text-[#8461C9] font-bold border-b-2 border-[#8461C9]" href="#">Início</a></li>
-                    <li><a class="text-white" href="#">Meu Perfil</a></li>
-                    <li><a class="text-white" href="#">Meu Time</a></li>
-                    <li><a class="text-white" href="#">Copas Pab</a></li>
-                    <li><a class="text-white" href="./index.html">Sair</a></li>
+                    <li><a class="text-lg text-white hover:text-[var(--color-purple)] duration-300" href="./indexPosLogin.html">Início</a></li>
+                    <li><a class="text-lg text-white hover:text-[var(--color-purple)] duration-300" href="#">Meu Perfil</a></li>
+                    <li><a class="text-lg text-white hover:text-[var(--color-purple)] duration-300" href="#">Meu Time</a></li>
+                    <li><a class="text-lg text-white hover:text-[var(--color-purple)] duration-300" href="#">Copas Pab</a></li>
+                    <li><a class="text-lg text-white hover:text-[var(--color-purple)] duration-300" href="./index.html">Sair</a></li>
                 </ul>
             </nav>
         </header>
-        <a class="text-white py-5 px-20 rounded-xl text-lg font-bold bg-rose-400 absolute left-1/2 -translate-x-1/2 bottom-24"
+        <a class="text-white py-5 px-20 rounded-xl text-xl font-bold bg-[var(--color-pink)] hover:bg-[var(--color-pink)]/90 duration-300 absolute left-1/2 -translate-x-1/2 bottom-24"
             href="#">Clique aqui para encontrar um time!</a>
     </section>
     <section class="w-screen flex flex-col items-center py-16 gap-24">
-        <h2 class="text-4xl font-bold text-[#8461C9]">Futebol Feminino Ao Vivo</h2>
+        <h2 class="text-4xl font-bold text-[var(--color-purple)]">Futebol Feminino Ao Vivo</h2>
 
         <div class="w-full flex flex-col items-center gap-10">
-            <div class="w-full flex flex-col items-center gap-4">
-                <h3 class="text-3xl font-bold text-[#6EAA38]">Brasileirão Feminino</h3>
-                <hr class="w-3/12 border-t-2 rounded-sm border-[#8461C9]">
+            <div class="w-full flex flex-col items-center gap-6">
+                <h3 class="text-3xl font-bold text-[var(--color-green)]">Brasileirão Feminino</h3>
+                <hr class="w-3/12 border-t-2 rounded-sm border-[var(--color-purple)]">
             </div>
-            <img src="../public/tabela-brasileirao.png" alt="Tabela do Brasileirão Feminino">
+            <img src="../../public/tabela-brasileirao.png" alt="Tabela do Brasileirão Feminino">
         </div>
     </section>
     <section class="w-screen flex flex-col  items-center py-20 gap-10">
-        <h3 class="text-3xl font-bold text-[#6EAA38]">Copa Passa Bola</h3>
+        <div class="w-full flex flex-col items-center gap-6">
+            <h3 class="text-3xl font-bold text-[var(--color-green)]">Copa Passa Bola</h3>
+            <hr class="w-3/12 border-t-2 rounded-sm border-[var(--color-purple)]">
+        </div>
         <div class="w-2/4 flex flex-col gap-6">
             <p>A Copa Passa Bola é uma competição idealizada pelo canal Passa a Bola, projeto criado por Alê Xavier e
                 Luana Maluf, que tem como missão dar visibilidade e espaço ao futebol feminino de forma leve, criativa e
@@ -57,11 +59,19 @@
                 origem.</p>
         </div>
         <div class="w-2/4 flex justify-end">
-            <a class="text-white py-3 px-10 rounded-xl text-lg font-bold bg-rose-400" href="">Cadastre-se para saber
+            <a class="text-white py-3 px-10 rounded-xl text-lg font-bold bg-[var(--color-pink)] hover:bg-[var(--color-pink)]/80 duration-300" href="">Cadastre-se para saber
                 mais!</a>
         </div>
+        <!-- Adicionando a ul marcada -->
+        <ul class="flex gap-10">
+            <li><a class="text-white" href="./indexPosLogin.html">Início</a></li>
+            <li><a class="text-white" href="#">Meu Perfil</a></li>
+            <li><a class="text-white" href="#">Meu Time</a></li>
+            <li><a class="text-white" href="#">Copas Pab</a></li>
+            <li><a class="text-white" href="./index.html">Sair</a></li>
+        </ul>
     </section>
-    <footer class="w-screen flex flex-col items-center gap-10 py-10 px-56" style="background:rgba(132,97,201,0.35);">
+    <footer class="w-screen flex flex-col items-center gap-10 py-10 px-56 bg-[var(--color-purple)]/35">
         <h1 class="text-5xl font-bold">Passa Bola</h1>
         <p class="w-3/6 text-center ">O Passa a Bola é uma equipe diversa e apaixonada que usa o futebol como ferramenta
             de representatividade e
@@ -69,27 +79,27 @@
             mídias, produzindo conteúdo autêntico e engajador.</p>
         <hr class="w-4/6 border-t-2 rounded-sm border-black my-3">
         <div class="w-4/6 flex flex-col items-center gap-7">
-            <img src="../public/Logo-preta.png" alt="Logo Passa Bola Preta">
+            <img src="../../public/Logo-preta.png" alt="Logo Passa Bola Preta">
             <p class="text-center">© 2025 Passa Bola Media. All Rights Reserved.</p>
             <ul class="flex gap-6 mt-4">
                 <li class="rounded-full border border-gray-400 p-4 flex items-center justify-center">
                     <a href="https://www.instagram.com/passaabola/" target="_blank">
-                        <img src="../public/Instagram.png" alt="Ícone Instagram Passa Bola">
+                        <img src="../../public/Instagram.png" alt="Ícone Instagram Passa Bola">
                     </a>
                 </li>
                 <li class="rounded-full border border-gray-400 p-4 flex items-center justify-center">
-                    <a href="https://www.tiktok.com/@passabola?is_from_webapp=1&sender_device=pc" target="_blank">
-                        <img src="../public/tik-tok.png" alt="Ícone TikTok Passa Bola">
+                    <a href="https://www.tiktok.com/@passabola" target="_blank">
+                        <img src="../../public/tik-tok.png" alt="Ícone TikTok Passa Bola">
                     </a>
                 </li>
                 <li class="rounded-full border border-gray-400 p-4 flex items-center justify-center">
                     <a href="https://twitter.com/passaabola" target="_blank">
-                        <img src="../public/Twitter.png" alt="Ícone Twitter Passa Bola">
+                        <img src="../../public/Twitter.png" alt="Ícone Twitter Passa Bola">
                     </a>
                 </li>
                 <li class="rounded-full border border-gray-400 p-4 flex items-center justify-center">
                     <a href="https://youtube.com/@passabola?si=qw6PM39NS-g8ZIMe" target="_blank">
-                        <img src="../public/YouTube.png" alt="Ícone YouTube Passa Bola">
+                        <img src="../../public/YouTube.png" alt="Ícone YouTube Passa Bola">
                     </a>
                 </li>
             </ul>
