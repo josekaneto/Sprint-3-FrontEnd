@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="../../src/assets/logo.svg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Perfil</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body class="md:overflow-hidden overflow-auto font-[var(--font-barlow)] bg-[var(--color-pink)]">
+    <header class="w-full bg-white flex justify-between items-center py-5 px-10 md:px-20 lg:px-56">
+        <img src="../../public/Logo-preta.png" alt="Logo Passa Bola Branca" />
+        <nav class="hidden md:block ml-auto">
+            <ul class="flex gap-7 md:gap-10 text-lg text-black whitespace-nowrap">
+                <li><a class="hover:text-[var(--color-purple)] duration-300" href="./indexPosLogin.html">Início</a></li>
+                <li><a class="hover:text-[var(--color-purple)] duration-300" href="./meuPerfil.html">Meu Perfil</a></li>
+                <li><a class="hover:text-[var(--color-purple)] duration-300" href="./meuTime.html">Meu Time</a></li>
+                <li><a class="hover:text-[var(--color-purple)] duration-300" href="./copasPabPosLogin.html">Copas
+                        PAB</a>
+                </li>
+                <li><a class="hover:text-[var(--color-purple)] duration-300" href="../index.html">Sair</a></li>
+            </ul>
+        </nav>
+        <!-- Hamburger menu button -->
+        <div class="md:hidden flex items-center justify-center relative">
+            <button class="flex items-center justify-center p-2 rounded focus:outline-none" onclick="toggleMenu()">
+                <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+            <nav id="mobile-menu"
+                class="absolute left-1/2 -translate-x-1/2 top-12 w-[90vw] max-w-xs bg-white rounded-xl shadow-lg z-50 hidden">
+                <ul class="flex flex-col gap-4 py-6 px-8 text-lg">
+                    <li><a class="text-[var(--color-pink)] font-bold" href="./indexPosLogin.html">Início</a></li>
+                    <li><a class="text-[var(--color-pink)] font-bold" href="./meuPerfil.html">Meu Perfil</a></li>
+                    <li><a class="text-[var(--color-pink)] font-bold" href="./meuTime.html">Meu Time</a></li>
+                    <li><a class="text-[var(--color-pink)] font-bold" href="./copasPabPosLogin.html">Copas PAB</a></li>
+                    <li><a class="text-[var(--color-pink)] font-bold" href="../index.html">Sair</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main
+    class="w-screen flex flex-col md:flex-row items-start justify-center p-7 md:p-6 md:gap-12 gap-4 bg-[var(--color-pink)]">
+    <section class="bg-white text-black w-full md:w-4/5 h-auto md:h-[750px] p-5 md:p-10 rounded-2xl">
+            <div class="w-full flex justify-end">
+                <a class="text-[var(--color-pink)] font-semibold" href="./entrarEmUmTime.html">Voltar</a>
+            </div>
+            <div class="w-full flex flex-col items-center justify-center gap-2 mb-6 text-center">
+                <h2 class="text-2xl md:text-3xl font-bold mb-2 text-[var(--color-pink)]">Time Azul</h2>
+                <img class="w-20 md:w-24 mx-auto mb-2" src="../../public/womensTeams.png" alt="">
+            </div>
+            <div class="w-full flex flex-col md:flex-row justify-between items-center mb-6 gap-4">
+                <div class="w-full md:w-1/2 flex flex-col justify-start items-center md:items-start gap-4">
+                    <div class="flex items-center gap-3">
+                        <span class="text-base md:text-lg">Cores do time:</span>
+                        <div class="w-8 h-6 md:w-10 md:h-7 rounded-md bg-blue-600"></div>
+                        <div class="w-8 h-6 md:w-10 md:h-7 rounded-md bg-gray-300"></div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-base md:text-lg">Jogadoras: <strong class="font-bold text-xl md:text-2xl text-[var(--color-purple)]">13/15</strong></span>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 flex flex-col items-center md:items-end gap-2">
+                    <a class="text-[var(--color-purple)] font-bold text-sm md:text-base" href="">Convidar Jogadoras</a>
+                    <a class="text-[var(--color-green)] font-bold text-sm md:text-base" href="">Ver Histórico de Partidas</a>
+                    <button class="text-red-600 font-bold text-sm md:text-base">Sair do time</button>
+                </div>
+            </div>
+            <hr class="my-6 w-full border-gray-300 rounded-xl" />
+            <form class="w-full" action="">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-7 max-h-[600px] md:max-h-[340px] overflow-auto w-full">
+                    <div class="flex items-center bg-[#e5def7] rounded-xl p-4 w-full max-w-md">
+                        <img src="../../public/fotoDePerfil.png" alt="Foto de Perfil"
+                            class="w-14 h-14 rounded-full bg-[#edeaea] mr-4" />
+                        <div class="flex-1">
+                            <div class="flex justify-between items-center">
+                                <span class="font-bold text-lg">Exemplo de Nome</span>
+                                <span class="text-sm">Perna boa: Direita</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-1">
+                                <span class="text-base">Ponta Direita</span>
+                                <a href="#" class="text-[var(--color-pink)] text-sm hover:underline">Mais informações</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center bg-[#e5def7] rounded-xl p-4 w-full max-w-md">
+                        <img src="../../public/fotoDePerfil.png" alt="Foto de Perfil"
+                            class="w-14 h-14 rounded-full bg-[#edeaea] mr-4" />
+                        <div class="flex-1">
+                            <div class="flex justify-between items-center">
+                                <span class="font-bold text-lg">Exemplo de Nome</span>
+                                <span class="text-sm">Perna boa: Direita</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-1">
+                                <span class="text-base">Ponta Direita</span>
+                                <a href="#" class="text-[var(--color-pink)] text-sm hover:underline">Mais informações</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center bg-[#e5def7] rounded-xl p-4 w-full max-w-md">
+                        <img src="../../public/fotoDePerfil.png" alt="Foto de Perfil"
+                            class="w-14 h-14 rounded-full bg-[#edeaea] mr-4" />
+                        <div class="flex-1">
+                            <div class="flex justify-between items-center">
+                                <span class="font-bold text-lg">Exemplo de Nome</span>
+                                <span class="text-sm">Perna boa: Direita</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-1">
+                                <span class="text-base">Ponta Direita</span>
+                                <a href="#" class="text-[var(--color-pink)] text-sm hover:underline">Mais informações</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center bg-[#e5def7] rounded-xl p-4 w-full max-w-md">
+                        <img src="../../public/fotoDePerfil.png" alt="Foto de Perfil"
+                            class="w-14 h-14 rounded-full bg-[#edeaea] mr-4" />
+                        <div class="flex-1">
+                            <div class="flex justify-between items-center">
+                                <span class="font-bold text-lg">Exemplo de Nome</span>
+                                <span class="text-sm">Perna boa: Direita</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-1">
+                                <span class="text-base">Ponta Direita</span>
+                                <a href="#" class="text-[var(--color-pink)] text-sm hover:underline">Mais informações</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center bg-[#e5def7] rounded-xl p-4 w-full max-w-md">
+                        <img src="../../public/fotoDePerfil.png" alt="Foto de Perfil"
+                            class="w-14 h-14 rounded-full bg-[#edeaea] mr-4" />
+                        <div class="flex-1">
+                            <div class="flex justify-between items-center">
+                                <span class="font-bold text-lg">Exemplo de Nome</span>
+                                <span class="text-sm">Perna boa: Direita</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-1">
+                                <span class="text-base">Ponta Direita</span>
+                                <a href="#" class="text-[var(--color-pink)] text-sm hover:underline">Mais informações</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center bg-[#e5def7] rounded-xl p-4 w-full max-w-md">
+                        <img src="../../public/fotoDePerfil.png" alt="Foto de Perfil"
+                            class="w-14 h-14 rounded-full bg-[#edeaea] mr-4" />
+                        <div class="flex-1">
+                            <div class="flex justify-between items-center">
+                                <span class="font-bold text-lg">Exemplo de Nome</span>
+                                <span class="text-sm">Perna boa: Direita</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-1">
+                                <span class="text-base">Ponta Direita</span>
+                                <a href="#" class="text-[var(--color-pink)] text-sm hover:underline">Mais informações</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center bg-[#e5def7] rounded-xl p-4 w-full max-w-md">
+                        <img src="../../public/fotoDePerfil.png" alt="Foto de Perfil"
+                            class="w-14 h-14 rounded-full bg-[#edeaea] mr-4" />
+                        <div class="flex-1">
+                            <div class="flex justify-between items-center">
+                                <span class="font-bold text-lg">Exemplo de Nome</span>
+                                <span class="text-sm">Perna boa: Direita</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-1">
+                                <span class="text-base">Ponta Direita</span>
+                                <a href="#" class="text-[var(--color-pink)] text-sm hover:underline">Mais informações</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center bg-[#e5def7] rounded-xl p-4 w-full max-w-md">
+                        <img src="../../public/fotoDePerfil.png" alt="Foto de Perfil"
+                            class="w-14 h-14 rounded-full bg-[#edeaea] mr-4" />
+                        <div class="flex-1">
+                            <div class="flex justify-between items-center">
+                                <span class="font-bold text-lg">Exemplo de Nome</span>
+                                <span class="text-sm">Perna boa: Direita</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-1">
+                                <span class="text-base">Ponta Direita</span>
+                                <a href="#" class="text-[var(--color-pink)] text-sm hover:underline">Mais informações</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center bg-[#e5def7] rounded-xl p-4 w-full max-w-md">
+                        <img src="../../public/fotoDePerfil.png" alt="Foto de Perfil"
+                            class="w-14 h-14 rounded-full bg-[#edeaea] mr-4" />
+                        <div class="flex-1">
+                            <div class="flex justify-between items-center">
+                                <span class="font-bold text-lg">Exemplo de Nome</span>
+                                <span class="text-sm">Perna boa: Direita</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-1">
+                                <span class="text-base">Ponta Direita</span>
+                                <a href="#" class="text-[var(--color-pink)] text-sm hover:underline">Mais informações</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center bg-[#e5def7] rounded-xl p-4 w-full max-w-md">
+                        <img src="../../public/fotoDePerfil.png" alt="Foto de Perfil"
+                            class="w-14 h-14 rounded-full bg-[#edeaea] mr-4" />
+                        <div class="flex-1">
+                            <div class="flex justify-between items-center">
+                                <span class="font-bold text-lg">Exemplo de Nome</span>
+                                <span class="text-sm">Perna boa: Direita</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-1">
+                                <span class="text-base">Ponta Direita</span>
+                                <a href="#" class="text-[var(--color-pink)] text-sm hover:underline">Mais informações</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center bg-[#e5def7] rounded-xl p-4 w-full max-w-md">
+                        <img src="../../public/fotoDePerfil.png" alt="Foto de Perfil"
+                            class="w-14 h-14 rounded-full bg-[#edeaea] mr-4" />
+                        <div class="flex-1">
+                            <div class="flex justify-between items-center">
+                                <span class="font-bold text-lg">Exemplo de Nome</span>
+                                <span class="text-sm">Perna boa: Direita</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-1">
+                                <span class="text-base">Ponta Direita</span>
+                                <a href="#" class="text-[var(--color-pink)] text-sm hover:underline">Mais informações</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center bg-[#e5def7] rounded-xl p-4 w-full max-w-md">
+                        <img src="../../public/fotoDePerfil.png" alt="Foto de Perfil"
+                            class="w-14 h-14 rounded-full bg-[#edeaea] mr-4" />
+                        <div class="flex-1">
+                            <div class="flex justify-between items-center">
+                                <span class="font-bold text-lg">Exemplo de Nome</span>
+                                <span class="text-sm">Perna boa: Direita</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-1">
+                                <span class="text-base">Ponta Direita</span>
+                                <a href="#" class="text-[var(--color-pink)] text-sm hover:underline">Mais informações</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center bg-[#e5def7] rounded-xl p-4 w-full max-w-md">
+                        <img src="../../public/fotoDePerfil.png" alt="Foto de Perfil"
+                            class="w-14 h-14 rounded-full bg-[#edeaea] mr-4" />
+                        <div class="flex-1">
+                            <div class="flex justify-between items-center">
+                                <span class="font-bold text-lg">Exemplo de Nome</span>
+                                <span class="text-sm">Perna boa: Direita</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-1">
+                                <span class="text-base">Ponta Direita</span>
+                                <a href="#" class="text-[var(--color-pink)] text-sm hover:underline">Mais informações</a>
+                            </div>
+                        </div>
+                    </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

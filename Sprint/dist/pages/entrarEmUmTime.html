@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="../../src/assets/logo.svg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Perfil</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body class="md:overflow-hidden overflow-auto font-[var(--font-barlow)] bg-[var(--color-pink)]">
+    <header class="w-full bg-white flex justify-between items-center py-5 px-10 md:px-20 lg:px-56">
+        <img src="../../public/Logo-preta.png" alt="Logo Passa Bola Branca" />
+        <nav class="hidden md:block ml-auto">
+            <ul class="flex gap-7 md:gap-10 text-lg text-black whitespace-nowrap">
+                <li><a class="hover:text-[var(--color-purple)] duration-300" href="./indexPosLogin.html">Início</a></li>
+                <li><a class="hover:text-[var(--color-purple)] duration-300" href="./meuPerfil.html">Meu Perfil</a></li>
+                <li><a class="hover:text-[var(--color-purple)] duration-300" href="./entrarEmUmTime.html">Time</a></li>
+                <li><a class="hover:text-[var(--color-purple)] duration-300" href="./copasPabPosLogin.html">Copas
+                        PAB</a>
+                </li>
+                <li><a class="hover:text-[var(--color-purple)] duration-300" href="../index.html">Sair</a></li>
+            </ul>
+        </nav>
+        <!-- Hamburger menu button -->
+        <div class="md:hidden flex items-center justify-center relative">
+            <button class="flex items-center justify-center p-2 rounded focus:outline-none" onclick="toggleMenu()">
+                <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+            <nav id="mobile-menu"
+                class="absolute left-1/2 -translate-x-1/2 top-12 w-[90vw] max-w-xs bg-white rounded-xl shadow-lg z-50 hidden">
+                <ul class="flex flex-col gap-4 py-6 px-8 text-lg">
+                    <li><a class="text-[var(--color-pink)] font-bold" href="./indexPosLogin.html">Início</a></li>
+                    <li><a class="text-[var(--color-pink)] font-bold" href="./meuPerfil.html">Meu Perfil</a></li>
+                    <li><a class="text-[var(--color-pink)] font-bold" href="./entrarEmUmTime.html">Time</a></li>
+                    <li><a class="text-[var(--color-pink)] font-bold" href="./copasPabPosLogin.html">Copas PAB</a></li>
+                    <li><a class="text-[var(--color-pink)] font-bold" href="../index.html">Sair</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main
+        class="w-screen flex flex-col md:flex-row items-start justify-center p-7 md:p-6 md:gap-12 gap-4 bg-[var(--color-pink)]">
+        <section class="bg-white text-black w-full md:w-4/5 h-auto md:h-[750px] p-5 md:p-10 rounded-2xl">
+            <div class="w-full flex flex-col items-start justify-center gap-2 mb-6 text-center">
+                <h2 class="text-2xl md:text-3xl font-bold mb-2">Entrar em um Time</h2>
+                <p>Encontre um time para a Copa Passa Bola! <strong class="text-[var(--color-pink)]">Se identifiquem e
+                        solicite a entrada!</strong></p>
+            </div>
+            <div class="w-full flex flex-col items-end">
+                <a class="text-[var(--color-green)] font-semibold" href="./cadastrarTime.html">Cadastrar um Time</a>
+                <a class="text-[var(--color-pink)] font-semibold" href="./meuTime.html">Meu Time</a>
+            </div>
+            <hr class="my-6 w-full border-gray-300 rounded-xl" />
+            <form class="w-full" action="">
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-7 max-h-[600px] md:max-h-[500px] overflow-auto w-full">
+                    <div
+                        class="bg-[var(--color-purple)]/20 rounded-2xl p-4 flex flex-col gap-2 shadow-2xl max-h-[280px] w-full items-center">
+                        <div class="flex flex-col items-center gap-1">
+                            <div
+                                class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-md mb-1">
+                                <img src="../../public/time-feminino.png" alt="Avatar Time"
+                                    class="w-15 h-15 rounded-full object-cover" />
+                            </div>
+                            <h3 class="text-lg font-bold text-black">Time Laranja</h3>
+                            <p class="text-md text-gray-700 text-center">Em formação, venha
+                                participar!</p>
+                        </div>
+                        <div class="flex flex-row sm:flex-col justify-between items-center w-full mt-2 gap-1">
+                            <button
+                                class="bg-[var(--color-pink)] text-white font-bold py-1 px-3 rounded shadow hover:bg-pink-600 transition text-lg w-1/2">SOLICITAR</button>
+                            <span class="text-lg font-bold text-black sm:mt-1">2/15</span>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-[var(--color-purple)]/20 rounded-2xl p-4 flex flex-col gap-2 shadow-2xl max-h-[280px] w-full items-center">
+                        <div class="flex flex-col items-center gap-1">
+                            <div
+                                class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-md mb-1">
+                                <img src="../../public/time-feminino.png" alt="Avatar Time"
+                                    class="w-15 h-15 rounded-full object-cover" />
+                            </div>
+                            <h3 class="text-lg font-bold text-black">Time Laranja</h3>
+                            <p class="text-md text-gray-700 text-center">Em formação, venha
+                                participar!</p>
+                        </div>
+                        <div class="flex flex-row sm:flex-col justify-between items-center w-full mt-2 gap-1">
+                            <button
+                                class="bg-[var(--color-pink)] text-white font-bold py-1 px-3 rounded shadow hover:bg-pink-600 transition text-lg w-1/2">SOLICITAR</button>
+                            <span class="text-lg font-bold text-black sm:mt-1">2/15</span>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-[var(--color-purple)]/20 rounded-2xl p-4 flex flex-col gap-2 shadow-2xl max-h-[280px] w-full items-center">
+                        <div class="flex flex-col items-center gap-1">
+                            <div
+                                class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-md mb-1">
+                                <img src="../../public/time-feminino.png" alt="Avatar Time"
+                                    class="w-15 h-15 rounded-full object-cover" />
+                            </div>
+                            <h3 class="text-lg font-bold text-black">Time
+                                Laranja</h3>
+                            <p class="text-md text-gray-700 text-center">Em
+                                formação, venha
+                                participar!</p>
+                        </div>
+                        <div class="flex flex-row sm:flex-col justify-between items-center w-full mt-2 gap-1">
+                            <button
+                                class="bg-[var(--color-pink)] text-white font-bold py-1 px-3 rounded shadow hover:bg-pink-600 transition text-lg w-1/2">SOLICITAR</button>
+                            <span class="text-lg font-bold text-black sm:mt-1">2/15</span>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-[var(--color-purple)]/20 rounded-2xl p-4 flex flex-col gap-2 shadow-2xl max-h-[280px] w-full items-center">
+                        <div class="flex flex-col items-center gap-1">
+                            <div
+                                class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-md mb-1">
+                                <img src="../../public/time-feminino.png" alt="Avatar Time"
+                                    class="w-15 h-15 rounded-full object-cover" />
+                            </div>
+                            <h3 class="text-lg font-bold text-black">
+                                Time Laranja</h3>
+                            <p class="text-md text-gray-700 text-center">
+                                Em formação, venha
+                                participar!</p>
+                        </div>
+                        <div class="flex flex-row sm:flex-col justify-between items-center w-full mt-2 gap-1">
+                            <button
+                                class="bg-[var(--color-pink)] text-white font-bold py-1 px-3 rounded shadow hover:bg-pink-600 transition text-lg w-1/2">SOLICITAR</button>
+                            <span class="text-lg font-bold text-black sm:mt-1">2/15</span>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-[var(--color-purple)]/20 rounded-2xl p-4 flex flex-col gap-2 shadow-2xl max-h-[280px] w-full items-center">
+                        <div class="flex flex-col items-center gap-1">
+                            <div
+                                class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-md mb-1">
+                                <img src="../../public/time-feminino.png" alt="Avatar Time"
+                                    class="w-15 h-15 rounded-full object-cover" />
+                            </div>
+                            <h3 class="text-lg font-bold text-black">
+                                Time
+                                Laranja
+                            </h3>
+                            <p class="text-md text-gray-700 text-center">
+                                Em
+                                formação,
+                                venha
+                                participar!
+                            </p>
+                        </div>
+                        <div class="flex flex-row sm:flex-col justify-between items-center w-full mt-2 gap-1">
+                            <button
+                                class="bg-[var(--color-pink)] text-white font-bold py-1 px-3 rounded shadow hover:bg-pink-600 transition text-lg w-1/2">SOLICITAR</button>
+                            <span class="text-lg font-bold text-black sm:mt-1">2/15</span>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-[var(--color-purple)]/20 rounded-2xl p-4 flex flex-col gap-2 shadow-2xl max-h-[280px] w-full items-center">
+                        <div class="flex flex-col items-center gap-1">
+                            <div
+                                class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-md mb-1">
+                                <img src="../../public/time-feminino.png" alt="Avatar Time"
+                                    class="w-15 h-15 rounded-full object-cover" />
+                            </div>
+                            <h3 class="text-lg font-bold text-black">
+                                Time
+                                Laranja
+                            </h3>
+                            <p class="text-md text-gray-700 text-center">
+                                Em
+                                formação,
+                                venha
+                                participar!
+                            </p>
+                        </div>
+                        <div class="flex flex-row sm:flex-col justify-between items-center w-full mt-2 gap-1">
+                            <button
+                                class="bg-[var(--color-pink)] text-white font-bold py-1 px-3 rounded shadow hover:bg-pink-600 transition text-lg w-1/2">SOLICITAR</button>
+                            <span class="text-lg font-bold text-black sm:mt-1">2/15</span>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-[var(--color-purple)]/20 rounded-2xl p-4 flex flex-col gap-2 shadow-2xl max-h-[280px] w-full items-center">
+                        <div class="flex flex-col items-center gap-1">
+                            <div
+                                class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-md mb-1">
+                                <img src="../../public/time-feminino.png" alt="Avatar Time"
+                                    class="w-15 h-15 rounded-full object-cover" />
+                            </div>
+                            <h3 class="text-lg font-bold text-black">
+                                Time
+                                Laranja
+                            </h3>
+                            <p class="text-md text-gray-700 text-center">
+                                Em
+                                formação,
+                                venha
+                                participar!
+                            </p>
+                        </div>
+                        <div class="flex flex-row sm:flex-col justify-between items-center w-full mt-2 gap-1">
+                            <button
+                                class="bg-[var(--color-pink)] text-white font-bold py-1 px-3 rounded shadow hover:bg-pink-600 transition text-lg w-1/2">SOLICITAR</button>
+                            <span class="text-lg font-bold text-black sm:mt-1">2/15</span>
+                        </div>
+                    </div><div
+                        class="bg-[var(--color-purple)]/20 rounded-2xl p-4 flex flex-col gap-2 shadow-2xl max-h-[280px] w-full items-center">
+                        <div class="flex flex-col items-center gap-1">
+                            <div
+                                class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-md mb-1">
+                                <img src="../../public/time-feminino.png" alt="Avatar Time"
+                                    class="w-15 h-15 rounded-full object-cover" />
+                            </div>
+                            <h3 class="text-lg font-bold text-black">
+                                Time
+                                Laranja
+                            </h3>
+                            <p class="text-md text-gray-700 text-center">
+                                Em
+                                formação,
+                                venha
+                                participar!
+                            </p>
+                        </div>
+                        <div class="flex flex-row sm:flex-col justify-between items-center w-full mt-2 gap-1">
+                            <button
+                                class="bg-[var(--color-pink)] text-white font-bold py-1 px-3 rounded shadow hover:bg-pink-600 transition text-lg w-1/2">SOLICITAR</button>
+                            <span class="text-lg font-bold text-black sm:mt-1">2/15</span>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-[var(--color-purple)]/20 rounded-2xl p-4 flex flex-col gap-2 shadow-2xl max-h-[280px] w-full items-center">
+                        <div class="flex flex-col items-center gap-1">
+                            <div
+                                class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-md mb-1">
+                                <img src="../../public/time-feminino.png" alt="Avatar Time"
+                                    class="w-15 h-15 rounded-full object-cover" />
+                            </div>
+                            <h3 class="text-lg font-bold text-black">
+                                Time
+                                Laranja
+                            </h3>
+                            <p class="text-md text-gray-700 text-center">
+                                Em
+                                formação,
+                                venha
+                                participar!
+                            </p>
+                        </div>
+                        <div class="flex flex-row sm:flex-col justify-between items-center w-full mt-2 gap-1">
+                            <button
+                                class="bg-[var(--color-pink)] text-white font-bold py-1 px-3 rounded shadow hover:bg-pink-600 transition text-lg w-1/2">SOLICITAR</button>
+                            <span class="text-lg font-bold text-black sm:mt-1">2/15</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

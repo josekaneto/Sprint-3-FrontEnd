@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="../../src/assets/logo.svg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Perfil</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body class="md:overflow-hidden overflow-auto font-[var(--font-barlow)] bg-[var(--color-pink)]">
+    <header class="w-full bg-white flex justify-between items-center py-5 px-10 md:px-20 lg:px-56">
+        <img src="../../public/Logo-preta.png" alt="Logo Passa Bola Branca" />
+        <nav class="hidden md:block ml-auto">
+            <ul class="flex gap-7 md:gap-10 text-lg text-black whitespace-nowrap">
+                <li><a class="hover:text-[var(--color-purple)] duration-300" href="./indexPosLogin.html">Início</a></li>
+                <li><a class="hover:text-[var(--color-purple)] duration-300" href="./meuPerfil.html">Meu Perfil</a></li>
+                <li><a class="hover:text-[var(--color-purple)] duration-300" href="./entrarEmUmTime.html">Time</a></li>
+                <li><a class="hover:text-[var(--color-purple)] duration-300" href="./copasPabPosLogin.html">Copas
+                        PAB</a>
+                </li>
+                <li><a class="hover:text-[var(--color-purple)] duration-300" href="../index.html">Sair</a></li>
+            </ul>
+        </nav>
+        <!-- Hamburger menu button -->
+        <div class="md:hidden flex items-center justify-center relative">
+            <button class="flex items-center justify-center p-2 rounded focus:outline-none" onclick="toggleMenu()">
+                <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+            <nav id="mobile-menu"
+                class="absolute left-1/2 -translate-x-1/2 top-12 w-[90vw] max-w-xs bg-white rounded-xl shadow-lg z-50 hidden">
+                <ul class="flex flex-col gap-4 py-6 px-8 text-lg">
+                    <li><a class="text-[var(--color-pink)] font-bold" href="./indexPosLogin.html">Início</a></li>
+                    <li><a class="text-[var(--color-pink)] font-bold" href="./meuPerfil.html">Meu Perfil</a></li>
+                    <li><a class="text-[var(--color-pink)] font-bold" href="./entrarEmUmTime.html">Time</a></li>
+                    <li><a class="text-[var(--color-pink)] font-bold" href="./copasPabPosLogin.html">Copas PAB</a></li>
+                    <li><a class="text-[var(--color-pink)] font-bold" href="../index.html">Sair</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="w-screen flex flex-col md:flex-row items-start justify-center p-12 md:gap-12 gap-6 bg-[var(--color-pink)]">
+        <aside class="flex flex-col items-center justify-evenly md:w-1/4 w-full md:h-[700px] h-auto bg-white rounded-3xl md:p-8 p-10 mb-4 md:mb-0">
+            <img src="../../public/womensTeams.png" alt="Logo Time" class="w-24 mb-4" />
+            <img src="../../public/fotoDePerfil.png" alt="Foto de Perfil" class="w-32 h-32 rounded-full mb-4" />
+            <span class="text-xl font-semibold mb-2">Vanessa Sato Rodrigues</span>
+            <label class="mb-4">
+                <input type="file" class="border hidden border-gray-300 rounded px-4 py-2" />
+                <span class="block text-center mt-2">Selecionar a Imagem</span>
+            </label>
+            <a href="./meuPerfilProfi.html" class="text-[var(--color-purple)] font-semibold mb-8">Ver perfil profissional</a>
+            <button class="bg-[var(--color-purple)] text-white rounded-lg px-6 py-2 font-bold">Salvar</button>
+        </aside>
+        <section class="bg-white text-black md:w-3/5 w-full md:h-[700px] h-auto md:p-10 p-4 rounded-2xl">
+            <h2 class="text-3xl font-bold mb-5">Meu Perfil</h2>
+            <div class="w-full flex items-center gap-20">
+                <h2>Informações do seu perfil</h2>
+                <p>
+                    Time: <strong class="text-[var(--color-purple)] font-black">Time Azul</strong>
+                </p>
+            </div>
+            <hr class="my-6 w-full border-gray-300 rounded-xl" />
+            <form class="w-full" action="">
+                <div class="flex flex-col gap-7 md:max-h-[520px] md:overflow-auto w-full">
+                    <div
+                        class="flex flex-col md:flex-row justify-between items-center gap-3 p-4 rounded-xl bg-gray-50 shadow-sm">
+                        <label class="font-bold text-gray-600 w-40 md:text-right md:mr-4">Nome completo</label>
+                        <input type="text" value="Vanessa Sato Rodrigues"
+                            class="bg-white border border-gray-300 rounded-lg px-4 py-2 text-black flex-1 focus:outline-none focus:ring-2 focus:ring-[var(--color-purple)] transition" />
+                    </div>
+                    <div class="flex flex-col md:flex-row items-center gap-3 p-4 rounded-xl bg-gray-50 shadow-sm">
+                        <label class="font-bold text-gray-600 w-40 md:text-right md:mr-4">Email:</label>
+                        <input type="text" value="vanSato5587@gmail.com"
+                            class="bg-white border border-gray-300 rounded-lg px-4 py-2 text-black flex-1 focus:outline-none focus:ring-2 focus:ring-[var(--color-purple)] transition" />
+                    </div>
+                    <div class="flex flex-col md:flex-row items-center gap-3 p-4 rounded-xl bg-gray-50 shadow-sm">
+                        <label class="font-bold text-gray-600 w-40 md:text-right md:mr-4">Número de telefone:</label>
+                        <input type="text" value="(13) 98765-4321"
+                            class="bg-white border border-gray-300 rounded-lg px-4 py-2 text-black flex-1 focus:outline-none focus:ring-2 focus:ring-[var(--color-purple)] transition" />
+                    </div>
+                    <div class="flex flex-col md:flex-row items-center gap-3 p-4 rounded-xl bg-gray-50 shadow-sm">
+                        <label class="font-bold text-gray-600 w-40 md:text-right md:mr-4">CEP:</label>
+                        <input type="text" value="12345-678"
+                            class="bg-white border border-gray-300 rounded-lg px-4 py-2 text-black flex-1 focus:outline-none focus:ring-2 focus:ring-[var(--color-purple)] transition" />
+                    </div>
+                    <div class="flex flex-col md:flex-row items-center gap-3 p-4 rounded-xl bg-gray-50 shadow-sm">
+                        <label class="font-bold text-gray-600 w-40 md:text-right md:mr-4">Endereço:</label>
+                        <input type="text" value="Rua Exemplo de Rua, 70"
+                            class="bg-white border border-gray-300 rounded-lg px-4 py-2 text-black flex-1 focus:outline-none focus:ring-2 focus:ring-[var(--color-purple)] transition" />
+                    </div>
+                    <div class="flex flex-col md:flex-row items-center gap-3 p-4 rounded-xl bg-gray-50 shadow-sm">
+                        <label class="font-bold text-gray-600 w-40 md:text-right md:mr-4">Adicionais:</label>
+                        <input type="text" value="Apt.Exemplo"
+                            class="bg-white border border-gray-300 rounded-lg px-4 py-2 text-black flex-1 focus:outline-none focus:ring-2 focus:ring-[var(--color-purple)] transition" />
+                    </div>
+                    <div class="flex flex-col md:flex-row items-center gap-3 p-4 rounded-xl bg-gray-50 shadow-sm">
+                        <label class="font-bold text-gray-600 w-40 md:text-right md:mr-4">Senha Atual:</label>
+                        <div class="flex flex-1 items-center gap-2">
+                            <input type="password" value="************"
+                                class="bg-white border border-gray-300 rounded-lg px-4 py-2 text-black w-full focus:outline-none focus:ring-2 focus:ring-[var(--color-purple)] transition" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+        <script src="../js/script.js"></script>
+</body>
+
+</html>
