@@ -21,15 +21,14 @@
                                 href="./indexPosLogin.html">Início</a></li>
                         <li><a class="text-lg text-white hover:text-[var(--color-purple)] duration-300" href="./meuPerfil.html">Meu
                                 Perfil</a></li>
-                        <li><a class="text-lg text-white hover:text-[var(--color-purple)] duration-300" href="./meuTime.html">Meu
-                                Time</a></li>
+                        <li><a class="text-lg text-white hover:text-[var(--color-purple)] duration-300" href="./entrarEmUmTime.html">Times</a></li>
                         <li><a class="text-lg text-white hover:text-[var(--color-purple)] duration-300"
                                 href="./copasPabPosLogin.html">Copas PAB</a></li>
                         <li><a class="text-lg text-white hover:text-[var(--color-purple)] duration-300"
                                 href="../index.html">Sair</a></li>
                     </ul>
                 </nav>
-                <!-- Hamburger menu button -->
+                <!-- Hamburger menu a href="./cadastrarTime.html" -->
                 <div class="md:hidden flex items-center justify-center relative">
                     <button class="flex items-center justify-center p-2 rounded focus:outline-none"
                         onclick="toggleMenu()">
@@ -47,7 +46,7 @@
                             </li>
                             <li><a class="text-[var(--color-pink)] font-bold" href="./meuPerfil.html">Meu Perfil</a>
                             </li>
-                            <li><a class="text-[var(--color-pink)] font-bold" href="./entrarEmUmTime.html">Time</a></li>
+                            <li><a class="text-[var(--color-pink)] font-bold" href="./entrarEmUmTime.html">Times</a></li>
                             <li><a class="text-[var(--color-pink)] font-bold" href="./copasPabPosLogin.html">Copas
                                     PAB</a></li>
                             <li><a class="text-[var(--color-pink)] font-bold" href="../index.html">Sair</a></li>
@@ -64,7 +63,7 @@
                         <p class="text-lg md:text-2xl text-white font-semibold mb-8 text-center">Um torneio criado por e
                             para mulheres no futebol</p>
                     </div>
-                    <a href="#"
+                    <a href="./cadastrarTime.html"
                         class="bg-[var(--color-pink)] text-white text-lg font-bold py-3 md:py-4 px-8 md:px-14 rounded-xl shadow-lg hover:bg-pink-600 transition">Inscreva
                         seu time</a>
                 </div>
@@ -137,13 +136,27 @@
                 <span class="text-base sm:text-lg font-bold text-[var(--color-pink)]">VS</span>
                 <div class="flex items-center gap-3">
                     <img src="../../public/time-feminino.png" alt="" class="w-8 h-8 sm:w-10 sm:h-10 md:w-10 md:h-10">
-                    <span class="text-lg sm:text-xl font-semibold text-[var(--color-green)]">A Definir</span>
+                    <span class="text-lg sm:text-xl font-semibold text-[var(--color-green)]">Time Cinza</span>
+                </div>
+            </div>
+            <div
+                class="bg-white rounded-xl shadow-[0_8px_32px_0px_var(--color-purple)] flex flex-col items-center py-8 px-4 sm:py-10 sm:px-8 md:py-12 md:px-12 gap-8">
+                <div class="flex items-center gap-3">
+                    <img src="../../public/time-feminino.png" alt="" class="w-8 h-8 sm:w-10 sm:h-10 md:w-10 md:h-10">
+                    <span class="text-lg sm:text-xl font-semibold text-[var(--color-purple)]">Time
+                        Ciano</span>
+                </div>
+                <span class="text-base sm:text-lg font-bold text-[var(--color-pink)]">VS</span>
+                <div class="flex items-center gap-3">
+                    <img src="../../public/time-feminino.png" alt="" class="w-8 h-8 sm:w-10 sm:h-10 md:w-10 md:h-10">
+                    <span class="text-lg sm:text-xl font-semibold text-[var(--color-green)]">A
+                        Definir</span>
                 </div>
             </div>
         </div>
         <a class="bg-[var(--color-pink)] text-white py-3 px-6 sm:py-4 sm:px-10 md:py-4 md:px-16 rounded-lg text-base sm:text-lg md:text-xl font-bold mt-4 w-2/4 sm:w-auto text-center block mx-auto shadow-lg transition hover:bg-pink-600"
-            href="">
-            Não fique de fora,cadastre seu time
+            href="./cadastrarTime.html">
+            Não fique de fora, cadastre seu time!
         </a>
     </section>
 
@@ -181,8 +194,8 @@
                         <p class="text-base text-gray-700 text-center">Equipe animada e pronta para jogar!</p>
                     </div>
                     <div class="flex flex-row sm:flex-col justify-between items-center w-full mt-8 gap-2">
-                        <button
-                            class="bg-[var(--color-pink)] text-white font-bold py-3 px-10 rounded shadow hover:bg-pink-600 transition text-lg w-full">SOLICITAR</button>
+                        <a href="./chat.html"
+                            class="bg-[var(--color-pink)] text-white font-bold py-3 px-10 text-center rounded shadow hover:bg-pink-600 transition text-lg w-full">SOLICITAR</a>
                         <span class="text-xl font-bold text-black sm:mt-2">8/15</span>
                     </div>
                 </div>
@@ -198,8 +211,8 @@
                         <p class="text-base text-gray-700 text-center">Jogadoras experientes e dedicadas.</p>
                     </div>
                     <div class="flex flex-row sm:flex-col justify-between items-center w-full mt-8 gap-2">
-                        <button
-                            class="bg-[var(--color-pink)] text-white font-bold py-3 px-10 rounded shadow hover:bg-pink-600 transition text-lg w-full">SOLICITAR</button>
+                        <a href="./chat.html"
+                            class="bg-[var(--color-pink)] text-white font-bold py-3 px-10 text-center rounded shadow hover:bg-pink-600 transition text-lg w-full">SOLICITAR</a>
                         <span class="text-xl font-bold text-black sm:mt-2">12/15</span>
                     </div>
                 </div>
@@ -215,8 +228,8 @@
                         <p class="text-base text-gray-700 text-center">Buscando novas jogadoras!</p>
                     </div>
                     <div class="flex flex-row sm:flex-col justify-between items-center w-full mt-8 gap-2">
-                        <button
-                            class="bg-[var(--color-pink)] text-white font-bold py-3 px-10 rounded shadow hover:bg-pink-600 transition text-lg w-full">SOLICITAR</button>
+                        <a href="./chat.html"
+                            class="bg-[var(--color-pink)] text-white font-bold py-3 px-10 text-center rounded shadow hover:bg-pink-600 transition text-lg w-full">SOLICITAR</a>
                         <span class="text-xl font-bold text-black sm:mt-2">5/15</span>
                     </div>
                 </div>
@@ -240,8 +253,8 @@
                         <p class="text-base text-gray-700 text-center">Em formação, venha participar!</p>
                     </div>
                     <div class="flex flex-row sm:flex-col justify-between items-center w-full mt-8 gap-2">
-                        <button
-                            class="bg-[var(--color-pink)] text-white font-bold py-3 px-10 rounded shadow hover:bg-pink-600 transition text-lg w-full">SOLICITAR</button>
+                        <a href="./chat.html"
+                            class="bg-[var(--color-pink)] text-white font-bold py-3 px-10 text-center rounded shadow hover:bg-pink-600 transition text-lg w-full">SOLICITAR</a>
                         <span class="text-xl font-bold text-black sm:mt-2">2/15</span>
                     </div>
                 </div>
@@ -257,8 +270,8 @@
                         <p class="text-base text-gray-700 text-center">Aberto para novas inscrições.</p>
                     </div>
                     <div class="flex flex-row sm:flex-col justify-between items-center w-full mt-8 gap-2">
-                        <button
-                            class="bg-[var(--color-pink)] text-white font-bold py-3 px-10 rounded shadow hover:bg-pink-600 transition text-lg w-full">SOLICITAR</button>
+                        <a href="./chat.html"
+                            class="bg-[var(--color-pink)] text-white font-bold py-3 px-10 text-center rounded shadow hover:bg-pink-600 transition text-lg w-full">SOLICITAR</a>
                         <span class="text-xl font-bold text-black sm:mt-2">6/15</span>
                     </div>
                 </div>
@@ -274,8 +287,8 @@
                         <p class="text-base text-gray-700 text-center">Buscando reforços para o torneio.</p>
                     </div>
                     <div class="flex flex-row sm:flex-col justify-between items-center w-full mt-8 gap-2">
-                        <button
-                            class="bg-[var(--color-pink)] text-white font-bold py-3 px-10 rounded shadow hover:bg-pink-600 transition text-lg w-full">SOLICITAR</button>
+                        <a href="./chat.html"
+                            class="bg-[var(--color-pink)] text-white font-bold py-3 px-10 text-center rounded shadow hover:bg-pink-600 transition text-lg w-full">SOLICITAR</a>
                         <span class="text-xl font-bold text-black sm:mt-2">4/15</span>
                     </div>
                 </div>

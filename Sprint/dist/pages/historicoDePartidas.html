@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="../../src/assets/logo.svg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Perfil Profissional</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body class="font-[var(--font-barlow)] bg-[var(--color-pink)] lg:overflow-hidden md:overflow-auto sm:overflow-auto overflow-auto">
+    <header class="w-full bg-white flex justify-between items-center py-5 px-4 sm:px-8 md:px-20 lg:px-56">
+        <img src="../../public/Logo-preta.png" alt="Logo Passa Bola Branca" />
+        <nav class="hidden md:block ml-auto">
+            <ul class="flex gap-7 md:gap-10 text-lg text-black whitespace-nowrap">
+                <li><a class="hover:text-[var(--color-purple)] duration-300" href="./indexPosLogin.html">Início</a></li>
+                <li><a class="hover:text-[var(--color-purple)] duration-300" href="./meuPerfilProfi.html">Meu Perfil</a>
+                </li>
+                <li><a class="hover:text-[var(--color-purple)] duration-300" href="./entrarEmUmTime.html">Times</a></li>
+                <li><a class="hover:text-[var(--color-purple)] duration-300" href="./copasPabPosLogin.html">Copas
+                        PAB</a>
+                </li>
+                <li><a class="hover:text-[var(--color-purple)] duration-300" href="../index.html">Sair</a></li>
+            </ul>
+        </nav>
+        <!-- Hamburger menu button -->
+        <div class="md:hidden flex items-center justify-center relative">
+            <button class="flex items-center justify-center p-2 rounded focus:outline-none" onclick="toggleMenu()">
+                <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+            <nav id="mobile-menu"
+                class="absolute left-1/2 -translate-x-1/2 top-12 w-[90vw] max-w-xs bg-white rounded-xl shadow-lg z-50 hidden">
+                <ul class="flex flex-col gap-4 py-6 px-8 text-lg">
+                    <li><a class="text-[var(--color-pink)] font-bold" href="./indexPosLogin.html">Início</a></li>
+                    <li><a class="text-[var(--color-pink)] font-bold" href="./meuPerfil.html">Meu Perfil</a></li>
+                    <li><a class="text-[var(--color-pink)] font-bold" href="./entrarEmUmTime.html">Times</a></li>
+                    <li><a class="text-[var(--color-pink)] font-bold" href="./copasPabPosLogin.html">Copas PAB</a></li>
+                    <li><a class="text-[var(--color-pink)] font-bold" href="../index.html">Sair</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="w-full flex flex-col md:flex-row items-start justify-center p-4 md:gap-12 gap-6 bg-[var(--color-pink)] md:overflow-auto overflow-auto">
+
+    <section class="bg-white text-black w-full md:w-4/5 md:p-10 p-4 rounded-2xl flex flex-col gap-8 shadow-lg mx-auto">
+            <div>
+                <div class="w-full flex justify-end">
+                    <a class="text-[var(--color-pink)] font-semibold" href="./meuTime.html">Voltar</a>
+                </div>
+                <h2 class="text-3xl text-[var(--color-green)] font-bold mb-5">Histórico de Partidas</h2>
+                <div class="w-full flex flex-col md:flex-row items-center gap-4 md:gap-20">
+                    <p>
+                        Aqui você pode visualizar o histórico de partidas do seu time na Copa Passa a Bola!
+                    </p>
+                </div>
+                <hr class="my-6 w-full border-gray-300 rounded-xl" />
+            </div>
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="w-full md:overflow-x-auto md:overflow-y-auto md:max-h-[500px] md:min-h-[400px] overflow-auto max-h-[70vh] min-h-[300px] sm:overflow-x-auto sm:overflow-y-auto overflow-x-auto overflow-y-auto">
+                    <div
+                        class="rounded-xl bg-[var(--color-purple)]/25 p-2 sm:p-4 md:p-6 min-w-[740px] w-full overflow-y-auto md:overflow-x-auto md:overflow-y-auto sm:overflow-x-auto sm:overflow-y-auto overflow-x-auto">
+                        <div class="grid grid-cols-7 text-center gap-2 sm:gap-4 rounded-xl min-w-[700px] min-h-[500px] h-full">
+                            <div class="col-span-1 py-3 text-lg md:text-xl font-bold text-[var(--color-green)]"></div>
+                            <div class="col-span-1 py-3 text-lg md:text-xl font-bold text-[var(--color-green)]">Power Girls FC</div>
+                            <div class="col-span-1 py-3 text-lg md:text-xl font-bold text-[var(--color-green)]">Placar</div>
+                            <div class="col-span-1 py-3 text-lg md:text-xl font-bold text-[var(--color-green)]"></div>
+                            <div class="col-span-1 py-3 text-lg md:text-xl font-bold text-[var(--color-green)]">Placar</div>
+                            <div class="col-span-1 py-3 text-lg md:text-xl font-bold text-[var(--color-green)]">Adversário</div>
+                            <div class="col-span-1 py-3 text-lg md:text-xl font-bold text-[var(--color-green)]"></div>
+                            <!-- Linha 1 -->
+                            <div ><img src="../../public/womensTeams.png" alt="Power Girls FC" class="inline-block w-10 h-10 sm:w-10 sm:h-10 rounded-full align-middle ml-1" /></div>
+                            <div class="font-bold text-lg text-[var(--color-pink)] underline">Power Girls FC</div>
+                            <div class="font-bold text-lg text-[var(--color-purple)]">3</div>
+                            <div class="font-bold text-lg text-[var(--color-purple)]">VS</div>
+                            <div class="font-bold text-lg text-[var(--color-purple)]">2</div>
+                            <div class="font-bold text-lg">Time Branco</div>
+                            <div><span class="inline-block w-10 h-10 sm:w-10 sm:h-10 bg-white rounded-full align-middle"></span></div>
+                            <!-- Linha 2 -->
+                            <div><img src="../../public/womensTeams.png" alt="Power Girls FC" class="inline-block w-10 h-10 rounded-full align-middle ml-1" /></div>
+                            <div class="font-bold text-lg text-[var(--color-pink)] underline">Power Girls FC</div>
+                            <div class="font-bold text-lg text-[var(--color-purple)]">1</div>
+                            <div class="font-bold text-lg text-[var(--color-purple)]">VS</div>
+                            <div class="font-bold text-lg text-[var(--color-purple)]">0</div>
+                            <div class="font-bold text-lg">Time Preto</div>
+                            <div><span class="inline-block w-10 h-10 bg-white rounded-full align-middle"></span></div>
+                            <!-- Linha 3 -->
+                            <div><img src="../../public/womensTeams.png" alt="Power Girls FC" class="inline-block w-10 h-10 rounded-full align-middle ml-1" /></div>
+                            <div class="font-bold text-lg">Power Girls FC</div>
+                            <div class="font-bold text-lg text-[var(--color-purple)]">2</div>
+                            <div class="font-bold text-lg text-[var(--color-purple)]">VS</div>
+                            <div class="font-bold text-lg text-[var(--color-purple)]">4</div>
+                            <div class="font-bold text-lg underline text-[var(--color-pink)]">Time Roxo</div>
+                            <div><span class="inline-block w-10 h-10 bg-white rounded-full align-middle"></span></div>
+                            <!-- Linha 4 -->
+                            <div><img src="../../public/womensTeams.png" alt="Power Girls FC" class="inline-block w-10 h-10 rounded-full align-middle ml-1" /></div>
+                            <div class="font-bold text-lg underline text-[var(--color-pink)]">Power Girls FC</div>
+                            <div class="font-bold text-lg text-[var(--color-purple)]">2</div>
+                            <div class="font-bold text-lg text-[var(--color-purple)]">VS</div>
+                            <div class="font-bold text-lg text-[var(--color-purple)]">1</div>
+                            <div class="font-bold text-lg">Time Rosa</div>
+                            <div><span class="inline-block w-10 h-10 bg-white rounded-full align-middle"></span></div>
+                            <!-- Linha 5 -->
+                            <div><img src="../../public/womensTeams.png" alt="Power Girls FC" class="inline-block w-10 h-10 rounded-full align-middle ml-1" /></div>
+                            <div class="font-bold text-lg">Power Girls FC</div>
+                            <div class="font-bold text-lg text-[var(--color-purple)]">0</div>
+                            <div class="font-bold text-lg text-[var(--color-purple)]">VS</div>
+                            <div class="font-bold text-lg text-[var(--color-purple)]">1</div>
+                            <div class="font-bold text-lg underline text-[var(--color-pink)]">Time Amarelo</div>
+                            <div><span class="inline-block w-10 h-10 bg-white rounded-full align-middle"></span></div>
+                            <!-- Linha 6 -->
+                            <div><img src="../../public/womensTeams.png" alt="Power Girls FC" class="inline-block w-10 h-10 rounded-full align-middle ml-1" /></div>
+                            <div class="font-bold text-lg">Power Girls FC</div>
+                            <div class="font-bold text-lg text-[var(--color-purple)]">3</div>
+                            <div class="font-bold text-lg text-[var(--color-purple)]">VS</div>
+                            <div class="font-bold text-lg text-[var(--color-purple)]">5</div>
+                            <div class="font-bold text-lg underline text-[var(--color-pink)]">Time Branco</div>
+                            <div><span class="inline-block w-10 h-10 bg-white rounded-full align-middle"></span></div>
+                            <!-- Linha 7 -->
+                            <div><img src="../../public/womensTeams.png" alt="Power Girls FC" class="inline-block w-10 h-10 rounded-full align-middle ml-1" /></div>
+                            <div class="font-bold text-lg">Power Girls FC</div>
+                            <div class="font-bold text-lg text-[var(--color-purple)]">1</div>
+                            <div class="font-bold text-lg text-[var(--color-purple)]">VS</div>
+                            <div class="font-bold text-lg text-[var(--color-purple)]">2</div>
+                            <div class="font-bold text-lg underline text-[var(--color-pink)]">Time Preto</div>
+                            <div><span class="inline-block w-10 h-10 bg-white rounded-full align-middle"></span></div>
+                            <!-- Linha 8 -->
+                            <div><img src="../../public/womensTeams.png" alt="Power Girls FC" class="inline-block w-10 h-10 rounded-full align-middle ml-1" /></div>
+                            <div class="font-bold text-lg">Power Girls FC</div>
+                            <div class="font-bold text-lg text-[var(--color-purple)]">2</div>
+                            <div class="font-bold text-lg text-[var(--color-purple)]">VS</div>
+                            <div class="font-bold text-lg text-[var(--color-purple)]">2</div>
+                            <div class="font-bold text-lg underline text-[var(--color-pink)]">Time Roxo</div>
+                            <div><span class="inline-block w-10 h-10 bg-white rounded-full align-middle"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

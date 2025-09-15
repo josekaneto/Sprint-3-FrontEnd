@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="../../src/assets/logo.svg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Perfil Profissional</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body class="md:overflow-hidden overflow-auto font-[var(--font-barlow)] bg-[var(--color-pink)]">
+    <header class="w-full bg-white flex justify-between items-center py-5 px-10 md:px-20 lg:px-56">
+        <img src="../../public/Logo-preta.png" alt="Logo Passa Bola Branca" />
+        <nav class="hidden md:block ml-auto">
+            <ul class="flex gap-7 md:gap-10 text-lg text-black whitespace-nowrap">
+                <li><a class="hover:text-[var(--color-purple)] duration-300" href="./indexPosLogin.html">Início</a></li>
+                <li><a class="hover:text-[var(--color-purple)] duration-300" href="./meuPerfilProfi.html">Meu Perfil</a>
+                </li>
+                <li><a class="hover:text-[var(--color-purple)] duration-300" href="./entrarEmUmTime.html">Times</a></li>
+                <li><a class="hover:text-[var(--color-purple)] duration-300" href="./copasPabPosLogin.html">Copas
+                        PAB</a>
+                </li>
+                <li><a class="hover:text-[var(--color-purple)] duration-300" href="../index.html">Sair</a></li>
+            </ul>
+        </nav>
+        <!-- Hamburger menu button -->
+        <div class="md:hidden flex items-center justify-center relative">
+            <button class="flex items-center justify-center p-2 rounded focus:outline-none" onclick="toggleMenu()">
+                <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+            <nav id="mobile-menu"
+                class="absolute left-1/2 -translate-x-1/2 top-12 w-[90vw] max-w-xs bg-white rounded-xl shadow-lg z-50 hidden">
+                <ul class="flex flex-col gap-4 py-6 px-8 text-lg">
+                    <li><a class="text-[var(--color-pink)] font-bold" href="./indexPosLogin.html">Início</a></li>
+                    <li><a class="text-[var(--color-pink)] font-bold" href="./meuPerfil.html">Meu Perfil</a></li>
+                    <li><a class="text-[var(--color-pink)] font-bold" href="./entrarEmUmTime.html">Times</a></li>
+                    <li><a class="text-[var(--color-pink)] font-bold" href="./copasPabPosLogin.html">Copas PAB</a></li>
+                    <li><a class="text-[var(--color-pink)] font-bold" href="../index.html">Sair</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="w-screen flex md:flex-row items-start justify-center p-12 md:gap-12 gap-6 bg-[var(--color-pink)]">
+
+        <section class="bg-white text-black w-4/5 h-auto md:p-10 p-4 rounded-2xl flex flex-col gap-8">
+            <div>
+                <div class="w-full flex justify-end">
+                    <a class="text-[var(--color-pink)] font-semibold" href="./entrarEmUmTime.html">Voltar</a>
+                </div>
+                <h2 class="text-3xl font-bold mb-5">Cadastrar um Time</h2>
+                <div class="w-full flex items-center gap-20">
+                    <p>
+                        Cadastre o seu Time na Copa Passa a Bola!
+                    </p>
+                </div>
+                <hr class="my-6 w-full border-gray-300 rounded-xl" />
+            </div>
+            <div class="flex flex-col items-center md:flex-row md:items-center sm:items-center  gap-8">
+                <div class="flex flex-col items-center justify-start w-1/4 min-w-[180px] gap-4 pt-2">
+                    <img src="../../public/womensTeams.png" alt="Avatar"
+                        class="w-24 h-24 sm:w-32 sm:h-32 object-cover mb-2" />
+                    <div class="text-center w-full flex flex-col gap-5">
+                        <label class="mb-4">
+                            <input type="file" class="border hidden border-gray-300 rounded px-2 sm:px-4 py-2" />
+                            <span class="block text-center mt-2 text-sm sm:text-base">Selecionar a Imagem</span>
+                        </label>
+                        <div class="flex flex-col items-center gap-2">
+                            <div class="text-gray-700 font-semibold text-base sm:text-lg">Jogadoras</div>
+                            <div class="text-[var(--color-pink)] font-bold text-xl sm:text-2xl mb-2">0/15</div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <a href="./meuTime.html"
+                                class="text-[var(--color-purple)] font-bold text-sm sm:text-base">Visualizar</a>
+                            <a href="#" class="text-[var(--color-purple)] font-bold text-sm sm:text-base">Convidar</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="w-3/4 flex flex-col gap-6" action="">
+                    <div class="flex flex-col gap-2">
+                        <div class="flex flex-col sm:flex-row gap-2 sm:gap-3 items-center">
+                            <span class="font-bold text-gray-600 text-sm sm:text-base">Nome do Time:</span>
+                            <input type="text" value="Power Girls FC"
+                                class="border border-gray-300 rounded-lg px-2 sm:px-3 py-2 text-black bg-white w-full sm:w-48" />
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <span class="font-bold text-gray-600 text-sm sm:text-base">Descrição do Time</span>
+                        <textarea rows="5"
+                            class="border border-gray-300 rounded-lg px-2 sm:px-3 py-2 text-black bg-white resize-none text-sm sm:text-base">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining</textarea>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <span class="font-bold text-gray-600 text-sm sm:text-base">Cores Principais:</span>
+                        <div class="flex flex-row gap-2 sm:gap-3 mt-1">
+                            <input id="cor1" type="color"
+                                class="w-12 h-8 sm:w-16 rounded-lg border-2 border-gray-300 shadow focus:border-[var(--color-purple)] focus:shadow-lg cursor-pointer transition"
+                                title="Escolha a cor principal 1" />
+                            <input id="cor2" type="color"
+                                class="w-12 h-8 sm:w-16 rounded-lg border-2 border-gray-300 shadow focus:border-[var(--color-purple)] focus:shadow-lg cursor-pointer transition"
+                                title="Escolha a cor principal 2" />
+                        </div>
+                    </div>
+                    <div class="flex justify-end mt-6">
+                        <button type="submit"
+                            class="bg-[var(--color-purple)] text-white font-bold px-4 sm:px-8 py-2 rounded-lg text-sm sm:text-base">Salvar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

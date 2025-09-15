@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="../../src/assets/logo.svg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body class="md:overflow-hidden overflow-auto font-[var(--font-barlow)] bg-[var(--color-pink)]">
+    <header class="w-full bg-white flex justify-between items-center py-5 px-10 md:px-20 lg:px-56">
+        <img src="../../public/Logo-preta.png" alt="Logo Passa Bola Branca" />
+        <nav class="hidden md:block ml-auto">
+            <ul class="flex gap-7 md:gap-10 text-lg text-black whitespace-nowrap">
+                <li><a class="hover:text-[var(--color-purple)] duration-300" href="./indexPosLogin.html">Início</a></li>
+                <li><a class="hover:text-[var(--color-purple)] duration-300" href="./meuPerfilProfi.html">Meu Perfil</a>
+                </li>
+                <li><a class="hover:text-[var(--color-purple)] duration-300" href="./entrarEmUmTime.html">Times</a></li>
+                <li><a class="hover:text-[var(--color-purple)] duration-300" href="./copasPabPosLogin.html">Copas
+                        PAB</a>
+                </li>
+                <li><a class="hover:text-[var(--color-purple)] duration-300" href="../index.html">Sair</a></li>
+            </ul>
+        </nav>
+        <!-- Hamburger menu button -->
+        <div class="md:hidden flex items-center justify-center relative">
+            <button class="flex items-center justify-center p-2 rounded focus:outline-none" onclick="toggleMenu()">
+                <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+            <nav id="mobile-menu"
+                class="absolute left-1/2 -translate-x-1/2 top-12 w-[90vw] max-w-xs bg-white rounded-xl shadow-lg z-50 hidden">
+                <ul class="flex flex-col gap-4 py-6 px-8 text-lg">
+                    <li><a class="text-[var(--color-pink)] font-bold" href="./indexPosLogin.html">Início</a></li>
+                    <li><a class="text-[var(--color-pink)] font-bold" href="./meuPerfil.html">Meu Perfil</a></li>
+                    <li><a class="text-[var(--color-pink)] font-bold" href="./entrarEmUmTime.html">Times</a></li>
+                    <li><a class="text-[var(--color-pink)] font-bold" href="./copasPabPosLogin.html">Copas PAB</a></li>
+                    <li><a class="text-[var(--color-pink)] font-bold" href="../index.html">Sair</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="w-screen flex md:flex-row items-start justify-center p-12 md:gap-12 gap-6 bg-[var(--color-pink)]">
+
+        <section class="w-full h-[80vh] bg-white rounded-2xl mx-auto p-8 flex flex-col gap-2 relative" style="max-width:1100px;">
+            <div class="flex flex-col sm:flex-row justify-between items-center mb-6 gap-2 sm:gap-0">
+                <h2 class="text-2xl sm:text-3xl font-bold">Chat Power Girls FC</h2>
+                <a href="./entrarEmUmTime.html" class="text-[var(--color-pink)] font-semibold text-lg sm:text-lg">Voltar</a>
+            </div>
+            <div class="flex-1 flex flex-col gap-6 overflow-y-auto py-2" style="min-height:400px;">
+                <!-- Mensagem 1 (direita) -->
+                <div class="flex w-full justify-end">
+                    <div class="flex flex-row items-end gap-2 sm:gap-3">
+                        <div class="flex flex-col items-end">
+                            <div class="bg-[var(--color-purple)] text-white rounded-xl px-4 sm:px-6 py-3 sm:py-4 max-w-[90vw] sm:max-w-md text-left text-sm sm:text-base font-medium">Boa Tarde me chamo Mariana, como vocês estão? Gostei muito do time de vocês, e gostaria de fazer parte dele, posso entrar ?</div>
+                            <span class="text-xs text-gray-500 mt-1">14:28</span>
+                        </div>
+                        <span class="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-[var(--color-pink)] inline-block"></span>
+                    </div>
+                </div>
+                <!-- Mensagem 2 (esquerda) -->
+                <div class="flex w-full justify-start">
+                    <div class="flex flex-row items-end gap-2 sm:gap-3">
+                        <span class="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-[var(--color-green)] inline-block"></span>
+                        <div class="flex flex-col items-start">
+                            <div class="bg-white border border-[var(--color-pink)] rounded-xl px-4 sm:px-6 py-3 sm:py-4 max-w-[90vw] sm:max-w-md text-left text-sm sm:text-base font-medium">Olá Mariana, me chamo Helena e sou a capitã do time. Tudo ótimo e com você ?<br>Pode entrar sim, falei com o restante da equipe e as meninas também gostaram de você, sinta se a vontade!</div>
+                            <span class="text-xs text-gray-500 mt-1">14:29</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mensagem 3 (direita) -->
+                <div class="flex w-full justify-end">
+                    <div class="flex flex-row items-end gap-2 sm:gap-3">
+                        <div class="flex flex-col items-end">
+                            <div class="bg-[var(--color-purple)] text-white rounded-xl px-4 sm:px-6 py-3 sm:py-4 max-w-[90vw] sm:max-w-md text-left text-sm sm:text-base font-medium">Muito obrigada Helena, muito feliz por poder fazer parte do time!</div>
+                            <span class="text-xs text-gray-500 mt-1">14:31</span>
+                        </div>
+                        <span class="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-[var(--color-pink)] inline-block"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Input de mensagem -->
+            <form class="absolute left-0 right-0 bottom-0 flex items-center gap-3 px-8 pb-8">
+                <input type="text" placeholder="Digite sua mensagem..." class="flex-1 border border-[var(--color-pink)] rounded-xl px-2 sm:px-4 py-2 outline-none text-sm sm:text-base" />
+                <button type="submit" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[var(--color-purple)] flex items-center justify-center text-white text-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5 sm:w-6 sm:h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
