@@ -64,8 +64,8 @@ Abra o arquivo `index.html` diretamente no seu navegador. O projeto será carreg
 
 ## Integrantes
 
-João Vitor Lombardi Hayashi - RM 563329
-José Otávio Kaneto - RM 563186
-Thomas Soares Sievers - RM 563566
-João Pedro Silva de Menezes - RM 566070
-Patrick Corrêa Haddad - RM 564088
+- João Vitor Lombardi Hayashi - RM 563329
+- José Otávio Kaneto - RM 563186
+- Thomas Soares Sievers - RM 563566
+- João Pedro Silva de Menezes - RM 566070
+- Patrick Corrêa Haddad - RM 564088
