@@ -27,6 +27,7 @@
     --container-md: 28rem;
     --container-lg: 32rem;
     --container-2xl: 42rem;
+    --container-3xl: 48rem;
     --container-4xl: 56rem;
     --container-6xl: 72rem;
     --text-xs: 0.75rem;
@@ -462,8 +463,14 @@
   .w-3 {
     width: calc(var(--spacing) * 3);
   }
+  .w-3\/2 {
+    width: calc(3/2 * 100%);
+  }
   .w-3\/4 {
     width: calc(3/4 * 100%);
+  }
+  .w-3\/5 {
+    width: calc(3/5 * 100%);
   }
   .w-3\/6 {
     width: calc(3/6 * 100%);
@@ -528,23 +535,8 @@
   .w-96 {
     width: calc(var(--spacing) * 96);
   }
-  .w-\[\%\] {
-    width: %;
-  }
-  .w-\[10\%\] {
-    width: 10%;
-  }
-  .w-\[50\%\] {
-    width: 50%;
-  }
-  .w-\[80\%\] {
-    width: 80%;
-  }
   .w-\[90vw\] {
     width: 90vw;
-  }
-  .w-\[100\%\] {
-    width: 100%;
   }
   .w-full {
     width: 100%;
@@ -554,6 +546,12 @@
   }
   .w-screen {
     width: 100vw;
+  }
+  .max-w-3 {
+    max-width: calc(var(--spacing) * 3);
+  }
+  .max-w-3xl {
+    max-width: var(--container-3xl);
   }
   .max-w-4xl {
     max-width: var(--container-4xl);
@@ -884,6 +882,9 @@
   }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
+  }
+  .px-7 {
+    padding-inline: calc(var(--spacing) * 7);
   }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);

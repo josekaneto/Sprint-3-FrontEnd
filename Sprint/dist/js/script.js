@@ -155,7 +155,7 @@ async function newsWomenSuperLeague() {
         const data = await response.json();
         const noticiasContainer = document.getElementById('noticiasContainer');
         // Adiciona padding lateral ao container
-        noticiasContainer.className = 'w-full max-w-4xl flex flex-col gap-6 md:px-8 px-2';
+        noticiasContainer.className = 'max-w-3xl mx-auto flex flex-col gap-6 md:px-10 px-10';
 
         noticiasContainer.innerHTML = '';
 
