@@ -19,48 +19,49 @@
             <img class="w-24 md:w-32 mx-auto md:mx-0" src="../../public/Logo-preta.png" alt="Logo Passa Bola Branca">
             <h2 class="text-2xl md:text-4xl font-bold text-center md:text-left">Cadastre-se</h2>
         </div>
-        <form class="w-3/4 flex flex-col gap-6 mt-8">
+        <form id="cadastroForm" class="w-3/4 flex flex-col gap-6 mt-8">
             <div class="flex flex-col gap-8 items-center w-full">
-                <input
+                <input name="nome"
                     class="w-full py-2 border-b-2 border-gray-400 focus:border-[var(--color-pink)] focus:outline-none"
-                    type="text" placeholder="Nome completo">
-                <input
+                    type="text" placeholder="Nome completo" required>
+                <input name="email"
                     class="w-full py-2 border-b-2 border-gray-400 focus:border-[var(--color-pink)] focus:outline-none"
-                    type="email" placeholder="Email">
+                    type="email" placeholder="Email" required>
                 <div class="w-full flex flex-col md:flex-row gap-6">
-                    <input
+                    <input name="numero"
                         class="w-full md:w-1/2 py-2 border-b-2 border-gray-400 focus:border-[var(--color-pink)] focus:outline-none"
                         type="text" placeholder="Número">
-                    <input
+                    <input name="cep"
                         class="w-full md:w-1/2 py-2 border-b-2 border-gray-400 focus:border-[var(--color-pink)] focus:outline-none"
                         type="text" placeholder="CEP">
                 </div>
                 <div class="w-full flex flex-col md:flex-row gap-6">
-                    <input
+                    <input name="endereco"
                         class="w-full md:w-1/2 py-2 border-b-2 border-gray-400 focus:border-[var(--color-pink)] focus:outline-none"
                         type="text" placeholder="Endereço">
-                    <input
+                    <input name="adicional"
                         class="w-full md:w-1/2 py-2 border-b-2 border-gray-400 focus:border-[var(--color-pink)] focus:outline-none"
                         type="text" placeholder="Adicional">
                 </div>
                 <div class="w-full flex flex-col md:flex-row gap-6">
-                    <input
+                    <input name="senha"
                         class="w-full md:w-1/2 py-2 border-b-2 border-gray-400 focus:border-[var(--color-pink)] focus:outline-none"
-                        type="password" placeholder="Senha">
-                    <input
+                        type="password" placeholder="Senha" required>
+                    <input name="confirmarSenha"
                         class="w-full md:w-1/2 py-2 border-b-2 border-gray-400 focus:border-[var(--color-pink)] focus:outline-none"
-                        type="password" placeholder="Confirmar senha">
+                        type="password" placeholder="Confirmar senha" required>
                 </div>
             </div>
 
-            <a href="./loginPerfil.html"
-                class="bg-[var(--color-pink)] text-white text-center py-3 rounded-lg font-bold w-full text-lg hover:bg-[var(--color-pink)]/90 duration-300 "
-                type="submit">Criar</a>
+            <button
+                class="bg-[var(--color-pink)] text-white text-center py-3 rounded-lg font-bold w-full text-lg hover:bg-[var(--color-pink)]/90 duration-300"
+                type="submit">Criar</button>
+            <p id="cadastroErro" class="text-center text-red-500 text-lg hidden"></p>
             <p class="text-center text-gray-400 text-lg">Já tem uma conta? <a class="text-[var(--color-pink)] font-bold"
                     href="./loginPerfil.html">Entrar</a></p>
         </form>
     </aside>
-    <script src="../../js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
